@@ -12,3 +12,17 @@ class mahasiswa
     }
 };
 
+int main()
+{
+    // Mengalokasikan memori di heap
+    mahasiswa *mhs = new mahasiswa{1}; 
+    
+    // Mengakses member menggunakan pointer
+    mhs ->nim = 2;
+    mhs -> ShowNim(); 
+    
+    // Membersihkan memori untuk mencegah memory leak
+    delete mhs; 
+    
+    return 0;
+}
