@@ -17,6 +17,7 @@ int main () {
     mhs.showNim();
 
     mahasiswa *ptrMhs = &mhs;
+    ptrMhs->nim = 3;
    
 
 }
